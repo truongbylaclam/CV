@@ -1,5 +1,6 @@
 h2 {
   color : #007a99;
+  font-size: 4rem;
 }
 h1 {
   color : #002080;
@@ -8,7 +9,15 @@ h3 {
   color : #ff6600;
 }
 body {
-  background-color: #bff696;
+    background-image: url("https://images.unsplash.com/photo-1587210290804-9730c6ef35d4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1489&q=80");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Zen", sans-serif;
+    min-height: 100vh;
+    margin: 0;
 }
 hr {
   border-color : gray;
@@ -20,6 +29,25 @@ hr {
 img {
   height : 200px;
 }
-.profilepic{
-  background-color: blue;
+
+p {
+  font-family: "Zen", sans-serif;
+  font-size: 2rem;
+}
+
+li {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.highlighted-text {
+  font-size: 2rem;
+}
+
+.small-text {
+  font-size: 1.5rem;
+}
+
+.skill-text {
+  font-size: 1.5rem;
 }
