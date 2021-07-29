@@ -3,31 +3,69 @@
   <head>
     <meta charset="UTF-8">
     <title>Ryan Website</title>
-    <link rel="stylesheet" href="CSS/style.css"
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,600&display=swap" rel="stylesheet">    <script src="https://kit.fontawesome.com/a6bd9eee95.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </head>
   <body>
-    <p></p>
+    <div class="nav-bar">
+      <!-- Nav Bar -->
+
+      <nav class="navbar navbar-default navbar-fixed-top no-margin navbar-dark">
+      <!-- Header Nav -->
+      <div class="pull-left">
+        <a class="navbar-brand logo-header navbar-left" href=""><img class="company-logo" src="images/T2RYKE_logo.png" alt=""></a>
+      </div>
+      <div class="pull-right">
+        <button class="navbar-toggler pull-left" type="button" data-toggle="collapse" data-target="#navBarButton" aria-controls="navBarButton">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+        <div class="collapse navbar-collapse pull-left" id="navBarButton">
+
+          <ul class="nav navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#footer">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#profolio">Profolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#hobbies">Hobbies</a>
+            </li>
+          </ul>
+        </div>
+        </nav>
+      </div>
+    <div class="description">
     <table>
       <tr>
         <td>
-          <img class="profilepic" src="images/TruongDinh.png" alt="Truong Dinh Potrait Pic" >
+          <img class="profilepic center" src="images/TruongDinh.png" alt="Truong Dinh Potrait Pic" >
+        </td>
+      </tr>
+      <tr>
         <td>
-          <h1>Truong Dinh</h1>
-          <p>A passionate Software Engineerer and Data Sceintist</p>
-          <p>Future student in Cal State East Bay</p>
-
+          <h1 class="text-center">Truong Dinh</h1>
+          <p class="text-center">A passionate Software Engineerer and Data Sceintist</p>
+          <p class="text-center">Future student in Cal State East Bay</p>
         </td>
       </tr>
     </table>
+    </div>
     <hr />
-    <h2>Courses completed</h2>
-    <ul>
-      <li>100 days to master Python Bootcamp</li>
-      <li>Full Stack Web Development Bootcamp</li>
-      <li>Machine Learning From A-Z Bootcamp</li>
+    <h2 class="big-text">Courses completed</h2>
+    <ul class="text-center">
+      <p class="small-text">100 days to master Python Bootcamp</p>
+      <p class="small-text">Full Stack Web Development Bootcamp</p>
+      <p class="small-text">Machine Learning From A-Z Bootcamp</p>
     </ul>
-    <h2>Academic Background</h2>
-    <table cellspacing="10">
+
+    <h2 class="big-text">Academic Background</h2>
+    <table class="table-content" cellspacing="10">
       <thead>
         <tr>
           <th class="highlighted-text">Dates</th>
@@ -36,53 +74,58 @@
       </thead>
       <tbody>
         <tr>
-        <td class="small-text">2017-2020</td>
-        <td class="small-text">Santa Ana College</td>
+        <td class="small-text table-text">2017-2020</td>
+        <td class="small-text table-text">  Santa Ana College</td>
       </tr>
       <tr>
-        <td class="small-text">2022-2024</td>
-        <td class="small-text">Cal State East Bay</td>
+        <td class="small-text table-text">2022-2024</td>
+        <td class="small-text table-text">  Cal State East Bay</td>
       </tr>
       </tbody>
     </table>
     <hr>
-    <h2>Skills</h2>
-    <table cellspacing="10">
+    <h2 class="big-text">Skills</h2>
+    <table class="table-content" cellspacing="10">
       <tr>
         <td>
           <table cellspacing="10">
               <tr>
-              <td class="skill-text">Python</td>
-              <td>⭐⭐⭐</td>
+              <td class="skill-text table-text">Python</td>
+              <td class="table-text">⭐⭐⭐</td>
             </tr>
             <tr>
-              <td class="skill-text">C++</td>
-              <td>⭐⭐⭐⭐</td>
+              <td class="skill-text table-text">C++</td>
+              <td class="table-text">⭐⭐⭐⭐</td>
             </tr>
-              <td class="skill-text">C#</td>
-              <td>⭐⭐</td>
+              <td class="skill-text table-text">C#</td>
+              <td class="table-text">⭐⭐</td>
           </table>
         </td>
         <td>
           <table cellspacing="10">
               <tr>
-              <td>HTML</td>
-              <td>⭐⭐⭐</td>
+              <td class="table-text">HTML</td>
+              <td class="table-text">⭐⭐⭐</td>
             </tr>
             <tr>
-              <td>CSS</td>
-              <td>⭐⭐⭐</td>
+              <td class="table-text">CSS</td>
+              <td class="table-text">⭐⭐⭐</td>
             </tr>
-              <td>JavaScript</td>
-              <td>⭐⭐</td>
+              <td class="table-text">JavaScript</td>
+              <td class="table-text">⭐⭐</td>
           </table>
         </td>
       </tr>
     </table>
     <hr></hr>
-    <a href="hobbies.html">My hobbies</a>
-    <p><a href="contact-details.html">Contact me</a></p>
     <script src="script.js" defer></script>
-
   </body>
+  <footer id="footer" class="center">
+    <div class="text-center">
+      <a class="table-text" id="contact-details" href="contact-details.html">Contact me</a>
+      <a class="table-text" id="profilio" href="profolio.html">My Profolio</a>
+      <a class="table-text" id="hobbies" href="hobbies.html">My hobbies</a>
+    </div>
+    <p class="text-center">© Copyright 2021 Truong Dinh</p>
+  </footer>
 </html>

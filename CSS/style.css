@@ -1,3 +1,49 @@
+/* Navigation Bar */
+
+
+
+
+/* Body */
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+/* Table */
+.table-text {
+  padding: 0 20px 0 20px;
+  margin: 0 15px 0 15px;
+  text-align: center;
+}
+
+.table-content {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.small-text {
+  font-size: 2rem;
+  font-family: sans-serif;
+  font-style: normal;
+  margin: 0;
+}
+.company-logo {
+  width:  150px;
+  height: 100px;
+}
+
+.description {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 h2 {
   color : #007a99;
   font-size: 4rem;
@@ -9,16 +55,13 @@ h3 {
   color : #ff6600;
 }
 body {
-    background-image: url("https://images.unsplash.com/photo-1587210290804-9730c6ef35d4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1489&q=80");
+    background-image: url("https://www.welltelgroup.com/wp-content/uploads/2018/10/related-product-light-background-790x430.jpg");
     background-size: cover;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     font-family: "Zen", sans-serif;
+    justify-content: center;
     min-height: 100vh;
-    margin: 0;
 }
+
 hr {
   border-color : gray;
   border-width: 8px;
@@ -32,20 +75,22 @@ img {
 
 p {
   font-family: "Zen", sans-serif;
-  font-size: 2rem;
+  font-size: 1rem;
 }
 
 li {
+  text-align: center;
   font-size: 1.5rem;
   font-weight: bold;
 }
 
-.highlighted-text {
-  font-size: 2rem;
+.big-text {
+  text-align: center;
 }
 
-.small-text {
-  font-size: 1.5rem;
+.highlighted-text {
+  font-size: 2rem;
+  padding: 0 10px 0 10px;
 }
 
 .skill-text {
