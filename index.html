@@ -3,12 +3,29 @@
   <head>
     <meta charset="UTF-8">
     <title>Ryan Website</title>
+    <link rel="stylesheet" href="/css/master.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="CSS/style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,600&display=swap" rel="stylesheet">    <script src="https://kit.fontawesome.com/a6bd9eee95.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+    function initMap() {
+            // The location of Uluru
+            const uluru = { lat: 33.6405, lng: -117.8443 };
+            // The map, centered at Uluru
+            const map = new google.maps.Map(document.getElementById("map"), {
+              zoom: 4,
+              center: uluru,
+            });
+            // The marker, positioned at Uluru
+            const marker = new google.maps.Marker({
+              position: uluru,
+              map: map,
+            });
+          }
+    </script>
   </head>
   <body>
     <div class="nav-bar">
@@ -20,7 +37,7 @@
         <a class="navbar-brand logo-header navbar-left" href=""><img class="company-logo" src="images/T2RYKE_logo.png" alt=""></a>
       </div>
       <div class="pull-right">
-        <button class="navbar-toggler pull-left" type="button" data-toggle="collapse" data-target="#navBarButton" aria-controls="navBarButton">
+        <button class="navbar-toggler pull-left hide-name" type="button" data-toggle="collapse" data-target="#navBarButton" aria-controls="navBarButton">
           <span class="navbar-toggler-icon"></span>
         </button>
       </div>
@@ -40,23 +57,27 @@
         </div>
         </nav>
       </div>
+    <div class="profile-pic">
+      <img class="profilepic center" src="images/TruongDinh.png" alt="Truong Dinh Potrait Pic" >
+    </div>
     <div class="description">
     <table>
       <tr>
         <td>
-          <img class="profilepic center" src="images/TruongDinh.png" alt="Truong Dinh Potrait Pic" >
+
         </td>
       </tr>
       <tr>
         <td>
-          <h1 class="text-center">Truong Dinh</h1>
+          <h1 class="text-center name-text"><strong>Truong Dinh</strong></h1>
           <p class="text-center big-text">A passionate Software Engineerer and Data Sceintist</p>
-          <p class="text-center big-text">Future student in Cal State East Bay</p>
+          <p class="text-center medium-text">Hi, my name is Truong Dinh, you can call me Ryan/Steve/Ken.</p>
+          <p class="text-center medium-text">I am an Software Engineerer, Full Stack Developer, who is currently in college.</p>
+          <p class="text-center medium-text">Interested in the a effcient business model that utilize AI in our daily life.</p>
         </td>
       </tr>
     </table>
     </div>
-    <hr />
     <h2 class="big-text">Courses completed</h2>
     <ul class="text-center">
       <p class="small-text">100 days to master Python Bootcamp</p>
@@ -118,8 +139,16 @@
       </tr>
     </table>
     <hr></hr>
+    <h3 class="text-center big-text">Find me</h3>
+    <hr></hr>
+    <div id="map"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="script.js" defer></script>
+    <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQBTelLX0khrzWcWG-FrGVRICf6lYM9-E&callback=initMap&libraries=&v=weekly&channel=2">
+      </script>
   </body>
+
   <footer id="footer" class="center">
     <div class="text-center">
       <a class="table-text" id="contact-details" href="contact-details.html">Contact me</a>

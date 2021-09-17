@@ -1,29 +1,32 @@
-const daysEl = document.getElementById('days');
-const hoursEl = document.getElementById('hours');
-const minsEl = document.getElementById('mins');
-const secondsEl = document.getElementById('seconds');
-const herBDate = '19 June 2021'
+// Node.js testing
+/*const express = require("express");
 
-function formatTime(time) {
-    return time < 10 ? `0${time}` : time;
-}
-function countdown(){
-    const currentDate = new Date();
-    const bDate = new Date(herBDate);
+const app = express();
 
-    const Totalseconds = (bDate - currentDate) / 1000;
-    const seconds = Math.floor(Totalseconds % 60);
-    const mins = Math.floor(Totalseconds / 60) % 60;
-    const hours = Math.floor(Totalseconds /  3600) % 24;
-    const days = Math.floor(Totalseconds / 3600 / 24);
-    console.log(days, hours, mins, seconds);
-    daysEl.innerHTML = formatTime(days);
-    hoursEl.innerHTML = formatTime(hours);
-    minsEl.innerHTML = formatTime(mins);
-    secondsEl.innerHTML = formatTime(seconds);
-}
+app.get('/', function(req, res){
+  res.send("Welcome to RyanD CV");
+}) */
+$("h1").on("click", function(){
+  $("h1").css("color", "gray");
+  setTimeout(function(){
+    $("h1").css("color", "black")
+  }, 300)
+});
 
 
-countdown();
+$(".hide-name").on("click", function (){
+  $("h1").slideToggle().animate({margin: 70});
+});
 
-setInterval(countdown, 1000);
+$(".name-text").hover , function() {
+  $(".big-text").slideToggle();
+});
+
+
+/*
+app.listen(3000, function(){
+  console.log("Server is running on port 3000");
+})
+*/<script async
+    src="https://maps.googleapis.com/maps/api/js?key=YAIzaSyAQBTelLX0khrzWcWG-FrGVRICf6lYM9-E&callback=initMap">
+</script>
