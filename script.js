@@ -5,7 +5,8 @@ const app = express();
 
 app.get('/', function(req, res){
   res.send("Welcome to RyanD CV");
-}) */
+})
+*/
 $("h1").on("click", function(){
   $("h1").css("color", "gray");
   setTimeout(function(){
@@ -23,10 +24,11 @@ $(".name-text").hover , function() {
 });
 
 
+
 /*
 app.listen(3000, function(){
   console.log("Server is running on port 3000");
 })
-*/<script async
-    src="https://maps.googleapis.com/maps/api/js?key=YAIzaSyAQBTelLX0khrzWcWG-FrGVRICf6lYM9-E&callback=initMap">
-</script>
+*/
+async
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQBTelLX0khrzWcWG-FrGVRICf6lYM9-E&callback=initMap&libraries=&v=weekly&channel=2">
