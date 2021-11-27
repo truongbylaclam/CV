@@ -9,6 +9,12 @@ const https = require("https");
 
 app.use(express.static(public));
 app.use(bodyParser.urlencoded({extended: true}));
+export.getMapAPI = function(){
+const api_key = "AIzaSyAQBTelLX0khrzWcWG-FrGVRICf6lYM9-E";
+const api_link_header = "https://maps.googleapis.com/maps/api/js?key=";
+const api_link_footer = "&callback=initMap&libraries=&v=weekly&channel=2";
+return api_link_header + api_key + api_link_footer
+}
 
 app.get('/', function(req, res){
   res.send(__dirname +  "/index.html");
