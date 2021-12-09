@@ -47,6 +47,12 @@
   text-align: center;
   font-size: 1.5rem;
 }
+.nav-bar-text {
+  color: #000000;
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: sans-serif;
+}
 .small-text {
   font-size: 2rem;
   font-family: sans-serif;
@@ -59,10 +65,10 @@
 }
 
 .description {
-  background-color: #FFFFFF;
   display: flex;
-  align-items: center;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: right;
 }
 /* Set the size of the div element that contains the map */
 #map {
@@ -82,11 +88,12 @@ h3 {
   color : #ff6600;
 }
 body {
-    background-image: url("https://www.welltelgroup.com/wp-content/uploads/2018/10/related-product-light-background-790x430.jpg");
+    background-image: url("E:/Projects/Full Stacks/HTML - Personal Site/CV/images/willian-justen-de-vasconcellos-jUCQRQeRs3k-unsplash.jpg");
     background-size: cover;
     font-family: "Zen", sans-serif;
     justify-content: center;
     min-height: 100vh;
+    position: relative;
 }
 
 hr {
