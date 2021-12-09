@@ -134,3 +134,10 @@ li {
 .skill-text {
   font-size: 1.5rem;
 }
+
+.title {
+  font-size: 2rem;
+  color: #ff6600;
+  margin: 5px, 7px, 5px, 7px;
+  
+}
