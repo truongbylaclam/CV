@@ -3,48 +3,42 @@
 const express = require("express");
 const request = require("request");
 const bodyParser = require("body-parser");
-
+const config = require("/config.js");
+const ejs = require("ejs");
 const app = express();
 const https = require("https");
-
+const mongoose = require("mongoose");
 app.use(express.static(public));
 app.use(bodyParser.urlencoded({extended: true}));
-export.getMapAPI = function(){
-const api_key = "AIzaSyAQBTelLX0khrzWcWG-FrGVRICf6lYM9-E";
+
+app.set("view engine", "ejs");
+
+let api_link = config.generate_api_key();
 const api_link_header = "https://maps.googleapis.com/maps/api/js?key=";
 const api_link_footer = "&callback=initMap&libraries=&v=weekly&channel=2";
-return api_link_header + api_key + api_link_footer
-}
+const map_api = api_link_header + api_key + api_link_footer;
+
+const itemSchema = {
+  name: String
+};
+
+const Item = mongoose.model("Item", itemSchema);
 
 app.get('/', function(req, res){
-  res.send(__dirname +  "/index.html");
-})
+  Item.findAll(function(err, foundItems){
+    if (!err) {
+      res.render("main", {title: "Homepage", listItem: foundItems});
+    } else {
+      res.send("Error " + err + " has occurred. Please try again.");
+    }
+  })
+
+});
 
 app.post('/', function(req, res){
-  res.s
-})
-$("h1").on("click", function(){
-  $("h1").css("color", "gray");
-  setTimeout(function(){
-    $("h1").css("color", "black")
-  }, 300)
+  res.send("Post success");
 });
-
-
-$(".hide-name").on("click", function (){
-  $("h1").slideToggle().animate({margin: 70});
-});
-
-$(".name-text").hover , function() {
-  $(".big-text").slideToggle();
-});
-
-
-
 
 app.listen(3000, function(){
   console.log("Server is running on port 3000");
 })
-
-async
-src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQBTelLX0khrzWcWG-FrGVRICf6lYM9-E&callback=initMap&libraries=&v=weekly&channel=2">
