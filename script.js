@@ -3,20 +3,20 @@
 const express = require("express");
 const request = require("request");
 const bodyParser = require("body-parser");
-const config = require("/config.js");
+const config = require(__dirname + "/confi.js");
 const ejs = require("ejs");
 const app = express();
 const https = require("https");
 const mongoose = require("mongoose");
-app.use(express.static(public));
+app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended: true}));
 
 app.set("view engine", "ejs");
 
-let api_link = config.generate_api_key();
+let api_link = config.api_key;
 const api_link_header = "https://maps.googleapis.com/maps/api/js?key=";
 const api_link_footer = "&callback=initMap&libraries=&v=weekly&channel=2";
-const map_api = api_link_header + api_key + api_link_footer;
+const map_api = api_link_header + api_link + api_link_footer;
 
 const itemSchema = {
   name: String
