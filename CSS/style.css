@@ -2,22 +2,22 @@
 
 /*Button*/
 .button1{
- display:inline-block;
- padding:0.35em 1.2em;
- border:0.1em solid #FFFFFF;
- margin:0 0.3em 0.3em 0;
- border-radius:0.12em;
- box-sizing: border-box;
- text-decoration:none;
- font-family:'Roboto',sans-serif;
- font-weight:300;
- color:#FFFFFF;
- text-align:center;
- transition: all 0.2s;
+  display:inline-block;
+  padding:0.35em 1.2em;
+  border:0.1em solid #FFFFFF;
+  margin:0 0.3em 0.3em 0;
+  border-radius:0.12em;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-family:'Roboto',sans-serif;
+  font-weight:300;
+  color:#FFFFFF;
+  text-align:center;
+  transition: all 0.2s;
 }
 .button1:hover{
- color:#000000;
- background-color:#FFFFFF;
+  color:#000000;
+  background-color:#FFFFFF;
 }
 /* Body */
 
@@ -140,4 +140,11 @@ li {
 
 .skill-text {
   font-size: 1.5rem;
+}
+
+.title {
+  font-size: 2rem;
+  color: #ff6600;
+  margin: 5px, 7px, 5px, 7px;
+  
 }
